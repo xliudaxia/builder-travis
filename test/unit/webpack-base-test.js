@@ -4,6 +4,7 @@ describe("webpack.base.js test case", () => {
   const baseConfig = require("../../lib/webpack.base.js");
 
   it("entry", () => {
+    console.log(baseConfig.entry.index);
     assert.equal(
       baseConfig.entry.index.indexOf(
         "/builder-webpack/test/smoke/template/src/index/index.js"
